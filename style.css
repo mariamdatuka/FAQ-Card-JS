@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Outfit&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    height:100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(rgba(176, 104, 233, 1),
+    rgba(100, 99, 231, 1));
+    
+}
+
+
+
+
+.woman-mobile, .pattern{
+  position:absolute;
+  width:20rem;
+}
+
+.woman-mobile{
+    left:25%;
+    top:7%;
+    z-index:111;
+}
+
+.pattern{
+    z-index:999;
+    left:25%;
+    
+}
+
+section{
+    background-color: hsl(240, 5%, 91%);
+    width:30rem;
+    height:45rem;
+    margin: 0 auto;
+    position:relative;
+    margin-top:15rem;
+    border-radius:15px;
+}
+
+h1{ 
+    text-align:center;
+    padding-top:10rem;
+    margin-bottom:1.5rem;
+    font-size:1.8rem;
+    font-weight:600;
+}
+
+.questions-section{
+    margin: 0 5rem;
+}
+
+.questions-section div {
+    width:22rem;
+    margin-bottom:2rem;
+    border-bottom: 1px solid white;
+}
+
+.questions-section div p {
+    margin-top:1rem;
+    margin-bottom:2rem;
+}
+
+.question{
+    display:flex;
+    gap:2rem;
+}
+
+.arrow-img{
+    cursor:pointer;
+    transform:rotate(0deg);
+    transition: all .3s ease;
+}
+
+.active .arrow-img{
+    transform:rotate(180deg);
+     transition: all .3s ease;
+}
+
+.answer{
+    color: hsl(237, 12%, 33%);
+    display:none;
+}
+
+.active .answer{
+    display:block;
+    
+    transition: all .3s ease-in;
+}
+
+.question:hover{
+  color: hsl(14, 88%, 65%);
+  cursor:pointer;
+}
+
+
+/*****RESPONSIVE 1440PX *****/
+
+@media screen and (min-width: 90em){
+  section{
+    width:80rem;
+    height:45rem;
+  }
+
+  h1{
+    margin-left:15rem;
+    padding-top:5rem;
+    font-size:2rem;
+  }
+
+  .questions-section{
+    margin-top:4rem;
+     margin-left:45rem;
+     font-size:1.2rem;
+  }
+
+  .questions-section div {
+    width:25rem;
+  }
+
+  .woman-mobile, .pattern{
+    width:40rem;
+  }
+
+  .woman-mobile{
+    left:17%;
+    top:27%;
+  }
+
+  .pattern{
+    top:53%;
+    left:17%;
+  }
+
+}
